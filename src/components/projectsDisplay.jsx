@@ -31,7 +31,7 @@ const ProjectsDisplay = () => {
 
   return (
     <div className="projects-container">
-    <h1>MIS PROYECTOS</h1>
+    <h2>PROYECTOS EN QUE HE PARTICIPADO:</h2>
       {projects.map((project, index) => (
         <div key={index} className="project-card">
           <h3 className="project-name">{project.name}</h3>
