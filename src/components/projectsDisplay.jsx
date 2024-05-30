@@ -10,7 +10,7 @@ const ProjectsDisplay = () => {
       achievements: 'Desarrollo de un sistema de votación seguro y transparente.'
     },
     {
-      name: 'GERTRUDIS',
+      name: 'Aplicación web para detección de vulnerabilidades',
       description: 'Herramienta de análisis de vulnerabilidades web.',
       technologies: 'Django, PostgreSQL, NIKTO, NPAM, SQL Injection, XSSstrike',
       achievements: 'Generación de reportes detallados de vulnerabilidades.'
