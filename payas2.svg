@@ -1,0 +1,7 @@
+<svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Nariz de payaso roja -->
+  <circle cx="50" cy="25" r="15" fill="red" />
+  
+  <!-- Sonrisa de payaso negra -->
+  <path d="M20 60 Q50 90, 80 60" stroke="black" stroke-width="8" fill="none" />
+</svg>
