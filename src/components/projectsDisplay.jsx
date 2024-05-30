@@ -31,6 +31,7 @@ const ProjectsDisplay = () => {
 
   return (
     <div className="projects-container">
+    <h1>MIS PROYECTOS</h1>
       {projects.map((project, index) => (
         <div key={index} className="project-card">
           <h3 className="project-name">{project.name}</h3>
