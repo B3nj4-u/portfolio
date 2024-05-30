@@ -1,0 +1,11 @@
+
+.imagen-titulo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .imagen-circular {
+    border-radius: 50%;
+    margin-right: 10px; /* Ajusta el espacio entre la imagen y el título */
+  }
+  
