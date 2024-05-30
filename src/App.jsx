@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Modal from "./components/modal";
+import ProjectsDisplay from "./components/projectsDisplay";
 
 function App() {
   // Estado para controlar la visibilidad de los modales
@@ -9,21 +10,21 @@ function App() {
 
   // Funciones para abrir los modales
   const openModalInformatica = () => {
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
     setIsModalInformaticaOpen(true);
   };
   const openModalOtros = () => {
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
     setIsModalOtrosOpen(true);
   };
 
   // Funciones para cerrar los modales
   const closeModalInformatica = () => {
-    document.body.style.overflow = 'visible';
+    document.body.style.overflow = "visible";
     setIsModalInformaticaOpen(false);
   };
   const closeModalOtros = () => {
-    document.body.style.overflow = 'visible';
+    document.body.style.overflow = "visible";
     setIsModalOtrosOpen(false);
   };
   // Información del currículum
@@ -135,8 +136,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>PAGINA EN CONSTRUCCION</h1>
-        <h2>{personalInfo.nombre}</h2>
+        <div className="header-content">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1TeF7qH7IxB1quC4ZFvLp7CEe9cstqfC39A&s"
+            alt="Imagen en construcción"
+            className="imagen-circular"
+          />
+          <div>
+            <h1>PAGINA EN CONSTRUCCION</h1>
+            <h2>{personalInfo.nombre}</h2>
+          </div>
+        </div>
       </header>
       <main>
         <section id="sobre-mi">
@@ -187,6 +197,7 @@ function App() {
             ))}
           </Modal>
         )}
+        <ProjectsDisplay />
       </main>
       <footer>
         <p>© 2024 Pedro B. Ulloa Valenzuela</p>
