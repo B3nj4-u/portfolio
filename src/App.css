@@ -67,7 +67,7 @@ footer {
   }
 }
 
-.App {
+body {
   background-image: url('../public/background.jpg');
   background-size: cover;
   background-attachment: fixed;
