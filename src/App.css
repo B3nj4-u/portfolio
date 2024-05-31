@@ -66,3 +66,10 @@ footer {
     width: 90%;
   }
 }
+
+.App {
+  background-image: url('../public/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}

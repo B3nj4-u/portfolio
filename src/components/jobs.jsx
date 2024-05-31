@@ -118,10 +118,10 @@ function Jobs() {
   ];
   return (
     <div>
-      <button onClick={openModalInformatica}>
+      <button className="button" onClick={openModalInformatica}>
         Ver Empleos del Área Informática
       </button>
-      <button onClick={openModalOtros}>Ver Otros Empleos</button>
+      <button className="button" onClick={openModalOtros}>Ver Otros Empleos</button>
       {isModalInformaticaOpen && (
         <Modal onClose={closeModalInformatica}>
           <h2>Empleos en Informática</h2>
