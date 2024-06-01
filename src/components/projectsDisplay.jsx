@@ -27,7 +27,7 @@ const ProjectsDisplay = () => {
     {
       name: "Aplicación web para detección de vulnerabilidades",
       description: "Herramienta de análisis de vulnerabilidades web.",
-      technologies: "Django, PostgreSQL, NIKTO, NMAP, SQL Injection, XSStrike",
+      technologies: "Django, PostgreSQL, NIKTO, NMAP, SQLmap, XSStrike",
       achievements: "Generación de reportes detallados de vulnerabilidades.",
     },
     {
