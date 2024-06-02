@@ -3,6 +3,8 @@ import "./personalInfo.css";
 import RedesSociales from "./redesSociales";
 import In from "../../public/in.png";
 import Gh from "../../public/gh.png";
+import CorreoBoton from "./correoBoton";
+
 
 function PersonalInfo() {
   const personalInfo = {
@@ -40,6 +42,7 @@ function PersonalInfo() {
         url={personalInfo.github}
         logo={Gh}
       />
+      <CorreoBoton correo={personalInfo.email} />
     </>
   );
 }
