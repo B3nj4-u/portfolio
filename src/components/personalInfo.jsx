@@ -27,7 +27,7 @@ function PersonalInfo() {
             className="imagen-circular"
           />
           <div>
-            <h1>PAGINA EN CONSTRUCCION</h1>
+            <h1>PÁGINA EN CONSTRUCCIÓN</h1>
             <h2>{personalInfo.nombre}</h2>
           </div>
         </div>

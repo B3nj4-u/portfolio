@@ -16,7 +16,6 @@ function App() {
       <PersonalInfo />
       <main>
         <AboutMe />
-
         <Jobs />
 
         <ProjectsDisplay />

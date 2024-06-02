@@ -118,6 +118,7 @@ function Jobs() {
   ];
   return (
     <div>
+      <h2>Experiencia Laboral:</h2>
       <button className="button" onClick={openModalInformatica}>
         Ver Empleos del Área Informática
       </button>

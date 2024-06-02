@@ -5,10 +5,28 @@
   border-radius: 5px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
-
 .button {
+  background-color: gray;
+  color: white; /* Cambia el color del texto a blanco */
+  border: none; /* Elimina el borde predeterminado */
+  padding: 15px 32px; /* Añade un poco de padding */
+  text-align: center; /* Centra el texto */
+  text-decoration: none; /* Elimina el subrayado */
+  display: inline-block;
+  font-size: 16px;
   margin-right: 50px;
   margin-left: 50px;
+  transition: background-color 0.3s ease; /* Añade una transición al color de fondo */
+}
+
+.button:hover {
+  background-color: darkgray; /* Cambia el color de fondo cuando se pasa el cursor por encima */
+  cursor: pointer; /* Cambia el cursor a una mano cuando se pasa por encima */
+}
+
+.button:active {
+  background-color: black; /* Cambia el color de fondo cuando se hace clic en el botón */
+  color: white;
 }
 
 @media (max-width: 768px) {
