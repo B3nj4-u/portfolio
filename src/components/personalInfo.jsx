@@ -1,5 +1,8 @@
 import React from "react";
 import "./personalInfo.css";
+import RedesSociales from "./redesSociales";
+import In from "../../public/in.png";
+import Gh from "../../public/gh.png";
 
 function PersonalInfo() {
   const personalInfo = {
@@ -27,6 +30,16 @@ function PersonalInfo() {
           </div>
         </div>
       </header>
+      <RedesSociales
+        nombre="LinkedIn: Pedro Benjamín Ulloa Valenzuela"
+        url={personalInfo.linkedIn}
+        logo={In}
+      />
+      <RedesSociales
+        nombre="GitHub: B3nj4-u"
+        url={personalInfo.github}
+        logo={Gh}
+      />
     </>
   );
 }

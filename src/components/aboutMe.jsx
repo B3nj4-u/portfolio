@@ -9,8 +9,8 @@ function AboutMe() {
   return (
     <>
       <section id="sobre-mi">
-        <h2>Sobre Mí</h2>
-        <p>{sobreMi}</p>
+        <h2 className="aboutMe-text">Sobre Mí</h2>
+        <p className="aboutMe-text">{sobreMi}</p>
       </section>
     </>
   );
