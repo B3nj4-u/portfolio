@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Modal from "./modal";
-import './jobs.css';
+import "./jobs.css";
 
 function Jobs() {
   // Estado para controlar la visibilidad de los modales
@@ -120,9 +120,11 @@ function Jobs() {
     <div>
       <h2>Experiencia Laboral:</h2>
       <button className="button" onClick={openModalInformatica}>
-        Ver Empleos del Área Informática
+        <p className="button-p">Ver Empleos del Área Informática</p>
       </button>
-      <button className="button" onClick={openModalOtros}>Ver Otros Empleos</button>
+      <button className="button" onClick={openModalOtros}>
+        <p className="button-p">Ver Otros Empleos</p>
+      </button>
       {isModalInformaticaOpen && (
         <Modal onClose={closeModalInformatica}>
           <h2>Empleos en Informática</h2>

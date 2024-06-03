@@ -7,3 +7,16 @@
     margin-top: 100px;
     margin-bottom: 50px;
 }
+
+
+  
+  .aboutMe-text {
+    background: url('../../public/background.jpg') no-repeat center center fixed; 
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    color: transparent;
+    background-size: cover;
+  }

@@ -48,7 +48,7 @@ const ProjectsDisplay = () => {
   return (
     <div className="projects-container">
       <h2>PROYECTOS EN QUE HE PARTICIPADO:</h2>
-      <button className="button" onClick={handleOpenModal}>Mostrar proyectos</button>
+      <button className="button" onClick={handleOpenModal}> <p className="button-p">Mostrar proyectos</p></button>
 
       {isModalOpen && (
         <Modal onClose={handleCloseModal}>

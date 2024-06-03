@@ -19,6 +19,17 @@
   transition: background-color 0.3s ease; /* Añade una transición al color de fondo */
 }
 
+.button-p{
+  background: url('../../public/background.jpg') no-repeat center center fixed; 
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    color: transparent;
+    background-size: cover;
+}
+
 .button:hover {
   background-color: darkgray; /* Cambia el color de fondo cuando se pasa el cursor por encima */
   cursor: pointer; /* Cambia el cursor a una mano cuando se pasa por encima */
