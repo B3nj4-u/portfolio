@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './correoBoton.css';
-import Gm from '../../public/gm.png';
+import Gm from '../public/gm.png';
 
 function CorreoBoton({ correo }) {
   const [mostrarCorreo, setMostrarCorreo] = useState(false);

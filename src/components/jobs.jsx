@@ -47,6 +47,12 @@ function Jobs() {
       funciones:
         "Soporte técnico informático, mantención de equipos, creación de material educativo.",
     },
+    {
+      name: "Emporio de Laura",
+      description: "Administración de página web para una tienda física.",
+      technologies: "WordPress",
+      achievements: "Mantenimiento eficiente del inventario digital.",
+    },
   ];
 
   const otrosEmpleos = [

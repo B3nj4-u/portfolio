@@ -37,12 +37,7 @@ const ProjectsDisplay = () => {
       technologies: "WordPress, cPanel",
       achievements: "Diseño y desarrollo full stack de un sitio web educativo.",
     },
-    {
-      name: "Emporio de Laura",
-      description: "Administración de página web para una tienda física.",
-      technologies: "WordPress",
-      achievements: "Mantenimiento eficiente del inventario digital.",
-    },
+    
   ];
 
   return (

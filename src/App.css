@@ -1,6 +1,6 @@
 /* App.css */
 #root {
-  max-width: 1280px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -14,7 +14,7 @@
 
 .App-header {
   background-color: #e1e6ef;
-  min-height: 10vh;
+  min-height: vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,16 +29,7 @@ main {
   margin: 2rem;
 }
 
-section {
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  background: #e1e6ef;
-  border: 1px solid #e0e0e0;
-  color: black;
-  border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: left;
-}
+
 
 .experiencia-container {
   display: flex;
@@ -67,7 +58,7 @@ footer {
 }
 
 body {
-  background-image: url('../public/background.jpg');
+  background-image: url('./public/background.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -103,7 +94,7 @@ body {
 
 
 .titulo-header{
-    background: url('../public/background.jpg') no-repeat center center fixed; 
+    background: url('./public/background.jpg') no-repeat center center fixed; 
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;

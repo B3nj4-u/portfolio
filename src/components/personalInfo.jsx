@@ -1,8 +1,8 @@
 import React from "react";
 import "./personalInfo.css";
 import RedesSociales from "./redesSociales";
-import In from "../../public/in.png";
-import Gh from "../../public/gh.png";
+import In from "../public/in.png";
+import Gh from "../public/gh.png";
 import CorreoBoton from "./correoBoton";
 
 

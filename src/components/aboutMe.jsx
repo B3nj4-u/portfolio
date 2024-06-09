@@ -1,18 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./aboutMe.css";
 
+import Desplegable from './desplegable';
+
 function AboutMe() {
-  const sobreMi = `Licenciado en Ciencias de la Ingeniería, Egresado de Ingeniería Civil en Informática y Analista de Datos Junior. 
-  Amplia capacidad para resolución de problemas, creativo y proactivo. Soy una persona confiable a la cual le gusta trabajar en equipo. 
-  Tengo buena gestión de tiempo y de recursos, además de buena comunicación y facilidad para atención al cliente.`;
+  const resumenProfesional = `Ingeniero Civil Informático con experiencia como Analista de Datos Junior. Poseo habilidades en desarrollo de software, análisis de datos y ciberseguridad. Proactivo y orientado a resultados, con capacidad para trabajar en equipo y adaptarme a nuevos desafíos.`;
+
+  const objetivoProfesional = `Busco desarrollarme como Ingeniero de Datos especializado en Machine Learning e Inteligencia Artificial. Actualmente, estoy fortaleciendo mis habilidades en análisis de datos a través de la certificación ofrecida por Google Careers. Posteriormente, planeo ampliar mis conocimientos en ingeniería de datos utilizando Python y R. Aspiro a contribuir significativamente en proyectos innovadores y dinámicos, preferiblemente en un entorno remoto que me permita flexibilidad geográfica (no excluyente).`;
 
   return (
-    <>
-      <section id="sobre-mi">
-        <h2 className="aboutMe-text">Sobre Mí</h2>
-        <p className="aboutMe-text">{sobreMi}</p>
-      </section>
-    </>
+    <div>
+      <Desplegable titulo="Resumen Profesional" descripcion={resumenProfesional} />
+      <Desplegable titulo="Objetivo Profesional" descripcion={objetivoProfesional} />
+    </div>
   );
 }
 
