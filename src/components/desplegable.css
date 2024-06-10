@@ -6,6 +6,7 @@
   border-radius: 100px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   z-index: 1;
+  margin-bottom: 20px;
 }
 
 .invisible {
@@ -38,7 +39,7 @@
   color: white;
 }
 
-.descripcion {
+.descripcion, .boton-texto {
   background: url("../public/background.jpg") no-repeat center center fixed;
   -webkit-background-clip: text;
   -moz-background-clip: text;

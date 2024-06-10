@@ -17,7 +17,7 @@ function CorreoBoton({ correo }) {
         className={mostrarCorreo ? 'logo-con-brillo' : ''}
         onClick={handleClick}
       />
-      {mostrarCorreo && <div className="correo">{correo}</div>}
+      {mostrarCorreo && <div className="correo"><p className='correo-texto'>{correo}</p></div>}
     </div>
   );
 }

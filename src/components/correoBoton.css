@@ -1,37 +1,48 @@
 .correo-boton {
-    position: relative;
+  position: relative;
+  margin-bottom: 120px;
+
 }
 
 .correo-boton img {
-    width: 120px;
-    height: 100px;
-    transition: box-shadow 0.3s ease;
-    cursor: pointer;
-    border-radius: 30px;
+  width: 120px;
+  height: 100px;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  border-radius: 30px;
 }
 
 .correo-boton .logo-con-brillo {
-    box-shadow: 0 0 10px white;
-    border-radius: 30px;
+  box-shadow: 0 0 10px white;
+  border-radius: 30px;
 }
 
 .correo-boton .correo {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 50px;
-    background: white;
-    color: black;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+  background: white;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 270px;
 }
 
+.correo-texto {
+  background: url("../public/background.jpg") no-repeat center center fixed;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  color: transparent;
+  background-size: cover;
+  
+}
 
 @media (max-width: 768px) {
-    .correo-boton {
-      padding: 0.5rem;
-      font-size: 14px;
-    }
+  .correo-boton {
+    padding: 0.5rem;
+    font-size: 14px;
   }
+}

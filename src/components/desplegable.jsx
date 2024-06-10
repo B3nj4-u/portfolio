@@ -10,7 +10,7 @@ function Desplegable({ titulo, descripcion }) {
 
   return (
     <div className={`desplegable ${mostrarDescripcion ? "" : "invisible"}`}>
-      <button onClick={handleClick}>{titulo}</button>
+      <button onClick={handleClick}><p className="boton-texto">{titulo}</p></button>
       {mostrarDescripcion && <div className="descripcion">{descripcion}</div>}
     </div>
   );
