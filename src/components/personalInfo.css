@@ -9,3 +9,13 @@
     margin-right: 10px; /* Ajusta el espacio entre la imagen y el título */
   }
   
+
+  @media (max-width: 768px) {
+    .imagen-titulo {
+      flex-direction: column;
+    }
+    .imagen-circular {
+      margin-right: 0;
+      margin-bottom: 10px; /* Ajusta el espacio entre la imagen y el título */
+    }
+  }

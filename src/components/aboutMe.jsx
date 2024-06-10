@@ -9,8 +9,8 @@ function AboutMe() {
   const objetivoProfesional = `Busco desarrollarme como Ingeniero de Datos especializado en Machine Learning e Inteligencia Artificial. Actualmente, estoy fortaleciendo mis habilidades en análisis de datos a través de la certificación ofrecida por Google Careers. Posteriormente, planeo ampliar mis conocimientos en ingeniería de datos utilizando Python y R. Aspiro a contribuir significativamente en proyectos innovadores y dinámicos, preferiblemente en un entorno remoto que me permita flexibilidad geográfica (no excluyente).`;
 
   return (
-    <div>
-      <Desplegable titulo="Resumen Profesional" descripcion={resumenProfesional} />
+    <div className="botoncitos">
+      <Desplegable  titulo="Resumen Profesional" descripcion={resumenProfesional} />
       <Desplegable titulo="Objetivo Profesional" descripcion={objetivoProfesional} />
     </div>
   );

@@ -6,8 +6,6 @@
   border-radius: 100px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   z-index: 1;
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
 
 .invisible {
@@ -58,5 +56,6 @@
   .desplegable button {
     margin-right: 25px;
     margin-left: 25px;
+    margin-top: -550px;
   }
 }
