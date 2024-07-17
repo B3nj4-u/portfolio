@@ -27,8 +27,8 @@ function PersonalInfo() {
             className="imagen-circular"
           />
           <div>
-            <h1 className="titulo-header">PÁGINA EN CONSTRUCCIÓN</h1>
             <h2 className="titulo-header">{personalInfo.nombre}</h2>
+            <h4 className="titulo-header">Ingeniero Civil en Informática, Licenciado en Ciencias de la Ingeniería, Analista de Datos</h4>
           </div>
         </div>
       </header>

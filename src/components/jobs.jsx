@@ -35,6 +35,12 @@ function Jobs() {
       funciones: "Diseño e implementación de página web.",
     },
     {
+      empresa: "Emporio de Laura",
+      periodo: "Marzo 2022 - Junio 2022",
+      cargo: "Vendedor y Encargado de Inventario",
+      funciones: "Ventas, mantenimiento eficiente del inventario digital.",
+    },
+    {
       empresa: "AKZIO",
       periodo: "5 abril 2023 - 31 julio 2023",
       cargo: "Practicante",
@@ -47,12 +53,7 @@ function Jobs() {
       funciones:
         "Soporte técnico informático, mantención de equipos, creación de material educativo.",
     },
-    {
-      name: "Emporio de Laura",
-      description: "Administración de página web para una tienda física.",
-      technologies: "WordPress",
-      achievements: "Mantenimiento eficiente del inventario digital.",
-    },
+    
   ];
 
   const otrosEmpleos = [
