@@ -1,27 +1,25 @@
 import React, { useState } from "react";
 import Modal from "./modal";
-import "./jobs.css";
 
 function Jobs() {
-  // Estado para controlar la visibilidad de los modales
   const [isModalInformaticaOpen, setIsModalInformaticaOpen] = useState(false);
   const [isModalOtrosOpen, setIsModalOtrosOpen] = useState(false);
 
-  // Funciones para abrir los modales
   const openModalInformatica = () => {
     document.body.style.overflow = "hidden";
     setIsModalInformaticaOpen(true);
   };
+
   const openModalOtros = () => {
     document.body.style.overflow = "hidden";
     setIsModalOtrosOpen(true);
   };
 
-  // Funciones para cerrar los modales
   const closeModalInformatica = () => {
     document.body.style.overflow = "visible";
     setIsModalInformaticaOpen(false);
   };
+
   const closeModalOtros = () => {
     document.body.style.overflow = "visible";
     setIsModalOtrosOpen(false);
@@ -53,7 +51,6 @@ function Jobs() {
       funciones:
         "Soporte técnico informático, mantención de equipos, creación de material educativo.",
     },
-    
   ];
 
   const otrosEmpleos = [
@@ -123,21 +120,31 @@ function Jobs() {
       funciones: "Inventario y orden.",
     },
   ];
+
   return (
-    <div>
-      <h2>Experiencia Laboral:</h2>
-      <button className="button" onClick={openModalInformatica}>
-        <p className="button-p">Ver Empleos del Área Informática</p>
-      </button>
-      <button className="button" onClick={openModalOtros}>
-        <p className="button-p">Ver Otros Empleos</p>
-      </button>
+    <div className="p-6">
+      <h2 className="text-2xl font-bold mb-4 text-center">Experiencia Laboral:</h2>
+      <div className="flex justify-center mb-4"> {/* Contenedor flex para centrar los botones */}
+        <button
+          className="rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 text-white py-3 px-8 shadow-md transition-all duration-300 hover:bg-gradient-to-l m-2"
+          onClick={openModalInformatica}
+        >
+          Empleos del Área Informática
+        </button>
+        <button
+          className="rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 text-white py-3 px-8 shadow-md transition-all duration-300 hover:bg-gradient-to-l m-2"
+          onClick={openModalOtros}
+        >
+          Otros Empleos
+        </button>
+      </div>
+
       {isModalInformaticaOpen && (
         <Modal onClose={closeModalInformatica}>
-          <h2>Empleos en Informática</h2>
+          <h2 className="text-2xl font-bold mb-4">Empleos en Informática</h2>
           {empleosInformatica.map((empleo, index) => (
-            <div key={index} className="empleo">
-              <h3>{empleo.empresa}</h3>
+            <div key={index} className="mb-4 p-4 bg-gray-100 rounded-2xl shadow-md">
+              <h3 className="text-xl font-semibold">{empleo.empresa}</h3>
               <p>
                 <strong>Periodo:</strong> {empleo.periodo}
               </p>
@@ -154,10 +161,10 @@ function Jobs() {
 
       {isModalOtrosOpen && (
         <Modal onClose={closeModalOtros}>
-          <h2>Otros Empleos</h2>
+          <h2 className="text-2xl font-bold mb-4">Otros Empleos</h2>
           {otrosEmpleos.map((empleo, index) => (
-            <div key={index} className="empleo">
-              <h3>{empleo.empresa}</h3>
+            <div key={index} className="mb-4 p-4 bg-gray-100 rounded-2xl shadow-md">
+              <h3 className="text-xl font-semibold">{empleo.empresa}</h3>
               <p>
                 <strong>Periodo:</strong> {empleo.periodo}
               </p>

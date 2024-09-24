@@ -1,105 +1,63 @@
-/* App.css */
-#root {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+
+h1 {
+  @apply text-3xl font-bold;
 }
 
-.App {
-  text-align: center;
-  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+h2 {
+  @apply text-2xl font-semibold;
 }
 
-.App-header {
-  background-color: #e1e6ef;
-  min-height: vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+p {
+  @apply text-gray-600 dark:text-gray-400;
 }
 
-main {
-  margin: 2rem;
+button {
+  @apply px-4 py-2 rounded focus:outline-none;
+}
+
+button p {
+  @apply text-white; /* Asegura que el texto dentro de los botones sea blanco */
 }
 
 
+/* Adjust button styles */
+button:hover {
+  @apply bg-gray-200 dark:bg-gray-700;
+}
 
-.experiencia-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+/* Sidebar */
+.sidebar {
+  @apply hidden md:flex flex-col w-64 bg-white dark:bg-gray-800 border-r;
+}
+
+/* Header */
+.header {
+  @apply flex items-center justify-between p-4 bg-white dark:bg-gray-800 border-b;
+}
+
+/* Main content */
+.main-content {
+  @apply flex-1 flex flex-col overflow-hidden;
+}
+
+/* Scroll area */
+.scroll-area {
+  @apply h-full overflow-y-auto;
+}
+
+/* Grid styles for projects */
+.project-grid {
+  @apply grid gap-4 md:grid-cols-2 lg:grid-cols-3;
 }
 
 
-footer {
-  margin-top: 2rem;
-  padding: 1rem;
-  background-color: #282c34;
-  color: white;
-  border-radius: 5px;
-}
 
-@media (max-width: 768px) {
-  .experiencia-container {
-    flex-direction: column;
-  }
-
-  .empleos-informatica,
-  .otros-empleos {
-    width: 90%;
-  }
-}
-
-body {
-  background-image: url('./public/background.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-}
-
-@media (max-width: 768px) {
-  #root {
-    padding: 1rem;
-  }
-  .App-header {
-    min-height: 4vh;
-    padding: 0.9rem;
-  }
-  main {
-    margin: 0.9rem;
-  }
-  section {
-    margin-bottom: 0.9rem;
-    padding: 0.75rem;
-  }
-  .experiencia-container {
-    flex-direction: column;
-  }
-  .empleos-informatica,
-  .otros-empleos {
-    width: 90%;
-  }
-  footer {
-    margin-top: 0.9rem;
-    padding: 0.5rem;
-  }
-}
-
-
-.titulo-header{
-    background: url('./public/background.jpg') no-repeat center center fixed; 
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    color: transparent;
-    background-size: cover;
+/* Text color for muted foreground */
+.text-muted-foreground {
+  @apply text-gray-500 dark:text-gray-400;
 }
